@@ -20,8 +20,7 @@ def print_func(*args):
         func_list = func_name.split('_')
         func_str = " ".join(func_list)
         arguments_str = str(arguments)
-        arg_str = arguments_str.replace('(', '').replace(')', '')
-        print(f'Функция: "{func_str.title()}", с аргументами: {arg_str}')
+        print(f'Функция: "{func_str.title()}", с аргументами:', arguments_str.strip('()'))
 
 
 print_func(open_browser, go_to_company_name_homepage, find_registration_button_on_login_page)
